@@ -1,0 +1,46 @@
+ <!-- Equality (==)
+ The equality operator (==) checks whether its two operands are equal, returning a Boolean result. Unlike the strict equality operator, it attempts to convert and compare operands that are of different types. -->
+<html>
+      <head>
+            <script>
+
+                  console.log(1 == 1);
+                  // expected output: true
+                  
+                  console.log('hello' == 'hello');
+                  // expected output: true
+                  
+                  console.log('1' ==  1);
+                  // expected output: true
+                  
+                  console.log(0 == false);
+                  // expected output: true
+            </script>
+      </head>
+ <body>
+       
+ </body>
+</html>
+<!-- Strict equality (===)
+The strict equality operator (===) checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different. -->
+<html>
+      <head>
+            <script>
+                  console.log(1 === 1);
+// expected output: true
+
+console.log('hello' === 'hello');
+// expected output: true
+
+console.log('1' ===  1);
+// expected output: false
+
+console.log(0 === false);
+// expected output: false
+
+            </script>
+      </head>
+      <body>
+            
+      </body>
+</html>

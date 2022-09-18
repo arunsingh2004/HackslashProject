@@ -1,0 +1,32 @@
+<!-- Arrow function -->
+<!-- Arrow functions allow us to write shorter function syntax:
+
+let myFunction = (a, b) => a * b; -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript "this"</h2>
+
+<button id="btn">Click Me!</button>
+
+<p id="demo"></p>
+
+<script>
+var hello;
+
+hello = () => {
+  document.getElementById("demo").innerHTML += this;
+}
+
+//The window object calls the function:
+window.addEventListener("load", hello);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);
+</script>
+
+</body>
+</html>
+<!-- Normal Function -->
+<!-- Regular functions created using function declarations or expressions are constructible and callable. Since regular functions are constructible, they can be called using the new keyword. However, the arrow functions are only callable and not constructible, i.e arrow functions can never be used as constructor functions. -->
